@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #0f172a;
+}
+
+/* GitHub Calendar 自定义样式 */
+.github-calendar-container {
+  color: #cbd5e1;
+}
+
+.github-calendar-container .react-activity-calendar__legend-colors {
+  margin-top: 8px;
+}
+
+.github-calendar-container text {
+  fill: #94a3b8 !important;
+  font-size: 12px;
+}
+
+.github-calendar-container .react-activity-calendar__count {
+  fill: #e2e8f0 !important;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
