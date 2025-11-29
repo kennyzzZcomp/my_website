@@ -46,19 +46,19 @@ export default function SkillsShowcase() {
       <h2 className="text-xl font-bold text-slate-100 mb-2">Technical Skills</h2>
       <p className="text-sm text-slate-400 mb-6">My tech stack and proficiency levels</p>
       
-      {/* Category Tabs */}
-      <div className="grid grid-cols-4 gap-3 mb-6">
+      {/* Category Tabs - 移动端 2x2，桌面端 1x4 */}
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
         {categories.map(cat => (
           <button
             key={cat.id}
             onClick={() => setActiveCategory(cat.id)}
-            className={`p-4 rounded-lg text-left transition-all ${
+            className={`p-3 lg:p-4 rounded-lg text-left transition-all ${
               activeCategory === cat.id
                 ? 'bg-cyan-500/20 border-2 border-cyan-500/50 shadow-lg shadow-cyan-500/10'
                 : 'bg-slate-700/30 border-2 border-slate-600/30 hover:bg-slate-700/50 hover:border-slate-600/50'
             }`}
           >
-            <div className="text-2xl mb-2">{cat.icon}</div>
+            <div className="text-xl lg:text-2xl mb-1 lg:mb-2">{cat.icon}</div>
             <div className={`font-semibold text-sm mb-1 ${
               activeCategory === cat.id ? 'text-cyan-400' : 'text-slate-300'
             }`}>
@@ -69,8 +69,8 @@ export default function SkillsShowcase() {
         ))}
       </div>
 
-      {/* Skills Grid - 2 columns for better use of space */}
-      <div className="grid grid-cols-2 gap-x-8 gap-y-4">
+      {/* Skills Grid - 移动端单列，桌面端双列 */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4">
         {skills[activeCategory].map((skill, index) => (
           <div 
             key={skill.name}

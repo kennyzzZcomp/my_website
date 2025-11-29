@@ -3,9 +3,9 @@ import SkillsShowcase from '../components/SkillsShowcase';
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex">
-      {/* left sidebar */}
-      <div className="w-80 bg-slate-800 p-6 flex flex-col items-center">
+    <div className="min-h-screen flex flex-col lg:flex-row">
+      {/* left sidebar - 移动端全宽，桌面端固定宽度 */}
+      <div className="w-full lg:w-80 bg-slate-800 p-6 flex flex-col items-center">
         {/* Avatar */}
         <div className="w-32 h-32 bg-slate-700 border-2 border-slate-600 flex items-center justify-center text-slate-200 text-4xl font-mono font-bold mb-4 mt-8">
           ZH
@@ -57,8 +57,8 @@ export default function Home() {
         </div>
         
       </div>
-      {/* main content */}
-      <div className="flex-1 p-8">
+      {/* main content - 移动端全宽，桌面端弹性宽度 */}
+      <div className="flex-1 p-4 sm:p-6 lg:p-8">
 
         <div className="bg-slate-800 border border-slate-700 p-6 rounded-lg mb-4 hover:border-cyan-500 transition-colors">
           <h2 className="text-xl font-bold text-slate-100 mb-3">About Me</h2>
