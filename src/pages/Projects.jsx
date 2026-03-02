@@ -3,7 +3,7 @@ export default function Projects() {
   return (
     <section>
       <h1 className = "text-slate-300">Projects</h1>
-      <p className="text-slate-100">waiting for post</p>
+      <p className="text-slate-500">waiting for post</p>
     </section>
   )
 }

@@ -3,10 +3,10 @@ import { Link, NavLink, Outlet } from 'react-router-dom'
 export default function Layout() {
   return (
     <>
-      <nav className="w-full bg-slate-900 border-b border-slate-800 fixed top-0 left-0 z-50">
+      <nav className="w-full bg-slate-100 border-b border-slate-300 fixed top-0 left-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
           {/* Logo or Name */}
-          <Link to="/" className="text-lg sm:text-xl font-mono font-bold text-slate-100 hover:text-cyan-400 transition-colors">
+          <Link to="/" className="text-lg sm:text-xl font-mono font-bold text-slate-900 hover:text-cyan-400 transition-colors">
             Kenny Huang
           </Link>
 
@@ -17,7 +17,7 @@ export default function Layout() {
               className={({ isActive }) =>
                 isActive
                   ? "text-cyan-400 border-b-2 border-cyan-400 pb-1"
-                  : "text-slate-400 hover:text-slate-100 transition-colors pb-1"
+                  : "text-slate-400 hover:text-cyan-400 transition-colors pb-1"
               }
             >
               Home
@@ -28,7 +28,7 @@ export default function Layout() {
               className={({ isActive }) =>
                 isActive
                   ? "text-cyan-400 border-b-2 border-cyan-400 pb-1"
-                  : "text-slate-400 hover:text-slate-100 transition-colors pb-1"
+                  : "text-slate-400 hover:text-cyan-400 transition-colors pb-1"
               }
             >
               Projects
@@ -39,7 +39,7 @@ export default function Layout() {
                 className={({ isActive }) =>
                     isActive
                     ? "text-cyan-400 border-b-2 border-cyan-400 pb-1"
-                    : "text-slate-400 hover:text-slate-100 transition-colors pb-1"
+                    : "text-slate-400 hover:text-cyan-400 transition-colors pb-1"
                 }
                 >
                 Posts
@@ -49,13 +49,13 @@ export default function Layout() {
         </div>
       </nav>
 
-      <main className="min-h-screen bg-slate-900">
+      <main className="min-h-screen bg-white">
         <Outlet />
       </main>
 
-      <footer className="py-6 text-center text-slate-500 text-sm bg-slate-900 border-t border-slate-800 font-mono">
+      <div className="w-full py-6 text-center text-slate-500 text-sm border-t border-slate-200 font-mono">
         © 2025 Zijian Huang
-      </footer>
+      </div>
     </>
   )
 }

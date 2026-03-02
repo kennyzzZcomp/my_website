@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: system-ui, -apple-system, sans-serif;
-  background-color: #0f172a;
+  background-color: #ffffff;
 }
 
 /* GitHub Calendar 自定义样式 */
@@ -33,11 +33,11 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #f0f5f9;
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #6e75f9;
   }
   button {
     background-color: #f9f9f9;

@@ -28,7 +28,7 @@ export default function GitHubHeatmap({ username }) {
   }, [username]);
 
   const getColor = (count) => {
-    if (count === 0) return 'bg-slate-700';
+    if (count === 0) return 'bg-white, border border-slate-300';
     if (count < 3) return 'bg-green-900';
     if (count < 6) return 'bg-green-700';
     if (count < 9) return 'bg-green-600';
