@@ -8,7 +8,7 @@ import 'katex/dist/katex.min.css'
 const tabs = [
   { id: 'tradelearn1', label: 'Trade Learning', file: '/md_files/trade_stock1.md' },
   { id: 'notes', label: 'Single Pixel Camera', file: '/md_files/spi_study.md' },
-  // { id: 'extras', label: 'Extras', file: '/md_files/extras.md' },
+  { id: 'extras', label: 'Lensless Camera', file: '/md_files/lensless_cam.md' },
 ]
 
 export default function Posts() {
